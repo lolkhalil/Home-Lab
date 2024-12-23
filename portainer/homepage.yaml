@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mafl:
+    image: hywax/mafl
+    container_name: mafl
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=GMT
+    ports:
+      - '3000:3000'
+    volumes:
+      - /docker/mafl/config.yml:/app/data/config.yml
