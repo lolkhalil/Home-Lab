@@ -4,7 +4,7 @@ In my Home Lab I run many things like Jellyfin, Jellyseer, Transmission, Radarr,
 # Setup
 
 ## Hardware & OS
-For my Hardware I'm currently using a Dell Optiplex 5040 which I have refurbished. For the OS side of things I'm using Promox 8.3 to host everything.
+For my Hardware I'm currently using a Dell Optiplex 5040 which I have refurbished. For the OS side of things I'm using Proxmox 8.3 to host everything.
 
 ### Specs:
 - CPU: 4 x Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
@@ -40,7 +40,7 @@ I'm currently running Cockpit on an Ubuntu 22.04.5 LTS Virtual Machine as my Sha
 - Media
 
 ## Jellyfin
-I run my Jellyfin instance on an LXC using one of the [Promox Helper Scripts](https://tteck.github.io/Proxmox/) which are great!
+I run my Jellyfin instance on an LXC using one of the [Proxmox Helper Scripts](https://tteck.github.io/Proxmox/) which are great!
 
 ### Plugins:
 - [Intro Skipper](https://github.com/intro-skipper/intro-skipper): I mean it's in the name, 50/50 on when it'll work
