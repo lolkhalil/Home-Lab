@@ -25,6 +25,7 @@ Portainer is where I host most of the Arr Stack and the majority of my configura
 - Radarr: Uses Prowlarr to find and request to download Movies
 - Sonarr: Same as Radarr but with TV Shows
 - Transmission: Downloads from the Torrents to get the actual Media
+- WireGuard: VPN Service so I can access my Lab from wherever
 
 ### Homepage Stack:
 - [Mafl](https://github.com/hywax/mafl): Just a nice simple Homepage which I really like

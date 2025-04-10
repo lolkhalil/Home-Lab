@@ -39,6 +39,12 @@ services:
       icon:
         name: devicon:portainer
         wrap: true
+    - title: Wireguard
+      description: VPN Configuration.
+      link: http://REDACTED:10086
+      icon:
+        url: https://static-00.iconduck.com/assets.00/wireguard-icon-1024x1024-78n6jncy.png
+        wrap: true
   ARRRRR:
     - title: Sonarr
       description: Getting TV Shows and Anime
