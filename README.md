@@ -4,7 +4,7 @@ In my Home Lab I run many things like Jellyfin, Jellyseer, Transmission, Radarr,
 # Setup
 
 ## Hardware & OS
-For my Hardware I'm currently using a Dell Optiplex 5040 which I have refurbished. For the OS side of things I'm using Proxmox 8.3 to host everything.
+For my Hardware I'm currently using a Dell Optiplex 5040 which I have refurbished. For the OS side of things I'm using Proxmox 8.4 to host everything.
 
 ### Specs:
 - CPU: 4 x Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
