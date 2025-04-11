@@ -25,7 +25,6 @@ Portainer is where I host most of the Arr Stack and the majority of my configura
 - Radarr: Uses Prowlarr to find and request to download Movies
 - Sonarr: Same as Radarr but with TV Shows
 - Transmission: Downloads from the Torrents to get the actual Media
-- WireGuard: VPN Service so I can access my Lab from wherever
 
 ### Homepage Stack:
 - [Mafl](https://github.com/hywax/mafl): Just a nice simple Homepage which I really like
@@ -42,6 +41,9 @@ I'm currently running Cockpit on an Ubuntu 22.04.5 LTS Virtual Machine as my Sha
 
 ## Jellyfin
 I run my Jellyfin instance on an LXC using one of the [Proxmox Helper Scripts](https://tteck.github.io/Proxmox/) which are great!
+
+## WireGuard
+I recently setup a VPN Service so I can access my Lab from wherever using a modified Proxmox Helper Script
 
 ### Plugins:
 - [Intro Skipper](https://github.com/intro-skipper/intro-skipper): I mean it's in the name, 50/50 on when it'll work
