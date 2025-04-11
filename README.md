@@ -39,11 +39,11 @@ I'm currently running Cockpit on an Ubuntu 22.04.5 LTS Virtual Machine as my Sha
 - Configuration
 - Media
 
-## Jellyfin
-I run my Jellyfin instance on an LXC using one of the [Proxmox Helper Scripts](https://tteck.github.io/Proxmox/) which are great!
-
 ## WireGuard
 I recently setup a VPN Service so I can access my Lab from wherever using a modified Proxmox Helper Script
+
+## Jellyfin
+I run my Jellyfin instance on an LXC using one of the [Proxmox Helper Scripts](https://tteck.github.io/Proxmox/) which are great!
 
 ### Plugins:
 - [Intro Skipper](https://github.com/intro-skipper/intro-skipper): I mean it's in the name, 50/50 on when it'll work
