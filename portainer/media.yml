@@ -1,0 +1,41 @@
+services:
+  jellyseerr:
+    container_name: jellyseerr
+    image: fallenbagel/jellyseerr:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=GMT
+    volumes:
+      - /docker/jellyseerr:/app/config
+    ports:
+      - 5055:5055
+    restart: unless-stopped
+  # might use in the future
+  # komga:
+  #   image: gotson/komga:latest
+  #   container_name: komga
+  #   volumes:
+  #     - /data:/data
+  #     - /docker/komga:/config
+  #   ports:
+  #     - 25600:25600
+  #   environment:
+  #     - PUID=1000
+  #     - PGID=1000
+  #     - TZ=GMT
+  #   restart: unless-stopped
+  tachidesk:
+    container_name: tachidesk
+    image: ghcr.io/suwayomi/suwayomi-server:stable
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=GMT
+    volumes: # make sure the Downloads is first in the volume list or it will not work
+      - /data/downloads/tachidesk:/home/suwayomi/.local/share/Tachidesk/downloads
+      - /docker/tachidesk:/home/suwayomi/.local/share/Tachidesk
+      - /data:/data
+    ports:
+      - 4568:4567
+    restart: unless-stopped
