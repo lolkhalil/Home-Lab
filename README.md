@@ -11,6 +11,7 @@ I've recently built a new PC to host everything on my Server. I'm currently usin
 - CPU: AMD Ryzen 5 5600 6-Core Processor
 - CPU Cooler: be quiet! Pure Rock 3
 - RAM: 32GB DDR4 3200MHz
+- NVME: 256GB NVME Drive (OS Drive)
 - SSD: Samsung 850 EVO 500GB (LVM-Thin)
 - HDD: 2x4TB WD Red Plus 3.5" Drives (Mirror ZFS Pool)
 - GPU: GeForce GTX 960
