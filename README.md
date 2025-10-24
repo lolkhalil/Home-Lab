@@ -23,7 +23,7 @@ I've recently built a new PC to host everything on my Server. I'm currently usin
 I recently setup a VPN Service so I can access my Lab from wherever using a modified [Proxmox Helper Script](https://community-scripts.github.io/ProxmoxVE/scripts?id=wireguard)
 
 
-## Shared Drive
+## Vault
 I'm currently running Cockpit on an Ubuntu LXC as my Shared Drive. 
 
 ### Shares:
