@@ -1,3 +1,10 @@
+networks:
+  arrnetwork:
+    name: arrnetwork
+    ipam:
+      config:
+      - subnet: 172.40.0.0/24
+
 services:
   gluetun:
     image: qmcgaw/gluetun
@@ -16,8 +23,8 @@ services:
     environment:
       - VPN_SERVICE_PROVIDER=surfshark
       - VPN_TYPE=wireguard
-      - WIREGUARD_PRIVATE_KEY=REDACTED
-      - WIREGUARD_ADDRESSES=REDACTED
+      - WIREGUARD_PRIVATE_KEY=${WIREGUARD_PRIVATE_KEY}
+      - WIREGUARD_ADDRESSES=${WIREGUARD_ADDRESSES}
       - HEALTH_VPN_DURATION_INITIAL=120s
     healthcheck:
       test: ping -c 1 www.google.com || exit 1
@@ -25,6 +32,9 @@ services:
       timeout: 20s
       retries: 5
     restart: unless-stopped
+    networks:
+      arrnetwork:
+        ipv4_address: 172.40.0.2
 
   deunhealth:
     image: qmcgaw/deunhealth
@@ -38,6 +48,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       
+
   transmission:
     image: lscr.io/linuxserver/transmission:latest
     container_name: transmission
@@ -87,6 +98,9 @@ services:
       - /data:/data
     ports:
       - 8989:8989
+    networks:
+      arrnetwork:
+        ipv4_address: 172.40.0.3
 
   radarr:
     image: lscr.io/linuxserver/radarr:latest
@@ -102,6 +116,9 @@ services:
       - /data:/data
     ports:
       - 7878:7878
+    networks:
+      arrnetwork:
+        ipv4_address: 172.40.0.4
   
   bazarr:
     image: lscr.io/linuxserver/bazarr:latest
@@ -117,6 +134,9 @@ services:
       - /data:/data
     ports:
       - 6767:6767
+    networks:
+      arrnetwork:
+        ipv4_address: 172.40.0.5
       
   flaresolverr:
     image: ghcr.io/flaresolverr/flaresolverr:latest
@@ -132,3 +152,6 @@ services:
       - /data:/data
     ports:
       - 8191:8191
+    networks:
+      arrnetwork:
+        ipv4_address: 172.40.0.6
