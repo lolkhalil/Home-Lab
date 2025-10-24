@@ -29,7 +29,7 @@ services:
   Server:
     - title: Proxmox
       description: VM's and LXC's.
-      link: https://192.168.0.71:8006/#v1:0:=node%2Fpve:4
+      link: https://192.168.0.254:8006/#v1:0:=node%2Fpve:4
       icon:
         url: https://camo.githubusercontent.com/4e9e0bf3fcd09d6557b4eaa8f790ec17599ed6e8eb37a7e78adaa30650c8a6e3/68747470733a2f2f7777772e70726f786d6f782e636f6d2f696d616765732f70726f786d6f782f50726f786d6f785f73796d626f6c5f7374616e646172645f6865782e706e67
         wrap: true
@@ -40,7 +40,7 @@ services:
         name: logos:ubuntu
         wrap: true
     - title: Portainer
-      description: Containers including arr' 
+      description: Docker Containers for Media
       link: https://192.168.0.75:9443
       icon:
         name: devicon:portainer
@@ -79,7 +79,7 @@ services:
   Games:
     - title: Sunshine
       description: Remote Software to play Games
-      link: https://192.168.0.137:47990
+      link: https://192.168.0.157:47990
       icon:
         url: https://raw.githubusercontent.com/LizardByte/Sunshine/refs/heads/master/sunshine.png
         wrap: true
