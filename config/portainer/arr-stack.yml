@@ -155,3 +155,26 @@ services:
     networks:
       arrnetwork:
         ipv4_address: 172.40.0.6
+        
+  posterizarr:
+    hostname: posterizarr
+    container_name: posterizarr
+    environment:
+      - TZ=GMT
+      - TERM=xterm
+      - RUN_TIME=disabled
+      # OPTIONAL: This tells uvicorn to run on port 9000 inside the container
+      - APP_PORT=9000      
+    image: ghcr.io/fscorrupt/posterizarr:latest
+    restart: unless-stopped
+    user: 1000:1000
+    ports:
+      - 9000:9000
+    volumes:
+      - /docker/posterizarr/config:/config:rw
+      - /docker/posterizarr/assets:/assets:rw
+      - /docker/posterizarr/assetsbackup:/assetsbackup:rw
+      - /docker/posterizarr/manualassets:/manualassets:rw
+    networks:
+      arrnetwork:
+        ipv4_address: 172.40.0.7
