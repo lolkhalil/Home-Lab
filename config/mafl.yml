@@ -20,24 +20,24 @@ services:
       icon:
         url: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Tachiyomi_logo.svg/800px-Tachiyomi_logo.svg.png
         wrap: true
-    - title: Transmission
-      description: Downloads for Movies, Anime and TV Shows.
-      link: http://192.168.0.75:9091
-      icon:
-        url: https://transmissionbt.com/assets/images/Transmission_icon.png
-        wrap: true
   Server:
     - title: Proxmox
       description: VM's and LXC's.
       link: https://192.168.0.254:8006/#v1:0:=node%2Fpve:4
       icon:
-        url: https://camo.githubusercontent.com/4e9e0bf3fcd09d6557b4eaa8f790ec17599ed6e8eb37a7e78adaa30650c8a6e3/68747470733a2f2f7777772e70726f786d6f782e636f6d2f696d616765732f70726f786d6f782f50726f786d6f785f73796d626f6c5f7374616e646172645f6865782e706e67
+        url: https://avatars.githubusercontent.com/u/2678585
         wrap: true
-    - title: Vault
-      description: Shared Drive for Jellyfin, etc.
-      link: https://192.168.0.74:9090/navigator
+    - title: Kuma
+      description: Uptime Monitoring
+      link: http://192.168.0.170:3001
       icon:
-        name: logos:ubuntu
+        url: https://uptimekuma.org/wp-content/uploads/2025/01/Uptime-Kuma-Logo.png
+        wrap: true
+    - title: Transmission
+      description: Downloads for Movies, Anime and TV Shows.
+      link: http://192.168.0.75:9091
+      icon:
+        url: https://transmissionbt.com/assets/images/Transmission_icon.png
         wrap: true
     - title: Portainer
       description: Docker Containers for Media
@@ -51,7 +51,25 @@ services:
       icon:
         url: https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ff/ac/78/ffac78a3-0634-81fa-fd12-b105f7af1915/AppIcon-85-220-0-4-2x.png/1200x630bb.png
         wrap: true
-  Portainer:
+    - title: Crafty
+      description: Minecraft Servers
+      link: https://192.168.0.117:8443
+      icon:
+        url: https://docs.craftycontrol.com/img/favicon.ico
+        wrap: true
+    - title: Vault
+      description: Shared Drive for Jellyfin, etc.
+      link: https://192.168.0.74:9090/navigator
+      icon:
+        name: logos:ubuntu
+        wrap: true
+    - title: Sunshine
+      description: Remote Software to play Games
+      link: https://192.168.0.157:47990
+      icon:
+        url: https://raw.githubusercontent.com/LizardByte/Sunshine/refs/heads/master/sunshine.png
+        wrap: true
+  Stack:
     - title: Sonarr
       description: Torrenting TV Shows and Anime
       link: http://192.168.0.75:8989/
@@ -76,16 +94,9 @@ services:
       icon:
         url: https://user-images.githubusercontent.com/26902309/41456760-be00043e-7081-11e8-9646-1b724037b4ff.png
         wrap: true
-  Games:
-    - title: Sunshine
-      description: Remote Software to play Games
-      link: https://192.168.0.157:47990
+    - title: Posterizarr
+      description: Backgrounds and Posters for Media
+      link: http://192.168.0.75:9000
       icon:
-        url: https://raw.githubusercontent.com/LizardByte/Sunshine/refs/heads/master/sunshine.png
-        wrap: true
-    - title: Crafty
-      description: Minecraft Servers
-      link: https://192.168.0.117:8443
-      icon:
-        url: https://docs.craftycontrol.com/img/favicon.ico
+        url: https://raw.githubusercontent.com/fscorrupt/posterizarr/refs/heads/main/webui/frontend/public/favicon.png
         wrap: true
