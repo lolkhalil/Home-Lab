@@ -39,6 +39,7 @@ Portainer is where I host most of the Arr Stack and the majority of my configura
 - [Deunhealth](https://github.com/qdm12/deunhealth): Monitoring if Containers are Healthy or not
 - [Flaresolverr](https://github.com/FlareSolverr/FlareSolverr): A Proxy Server to help Prowlarr with Indexers
 - [Gluetun](https://github.com/qdm12/gluetun): Configured to go through my Surfshark VPN 
+- [Posterizarr](https://github.com/fscorrupt/posterizarr): Way cooler posters for Jellyfin to grab
 - [Prowlarr](https://github.com/Prowlarr/Prowlarr): Using Indexers to find Torrents
 - [Radarr](https://github.com/Radarr/Radarr): Uses Prowlarr to find and request to download Movies
 - [Sonarr](https://github.com/Sonarr/Sonarr): Same as Radarr but with TV Shows
@@ -53,18 +54,19 @@ Portainer is where I host most of the Arr Stack and the majority of my configura
 
 
 ## Jellyfin
-I run my Jellyfin instance on an LXC using one of the [Proxmox Helper Scripts](https://tteck.github.io/Proxmox/) which are great!
+I run my Jellyfin instance on an LXC using one of the [Proxmox Helper Script](https://tteck.github.io/Proxmox/#jellyfin-media-server-lxc) which are great!
 
 ### Plugins:
-- [Intro Skipper](https://github.com/intro-skipper/intro-skipper): I mean it's in the name, 50/50 on when it'll work
-- Open Subtitles: Just in case Bazarr doesn't generate the Subtitles
-- [Skin Manager](https://github.com/danieladov/jellyfin-plugin-skin-manager): Some nice Themes to put on the Jellyfin interface
-- AniDB, Fanart, TheTVDB: Mostly for metadata like pictures, info about the movie etc.
+- [Intro Skipper](https://github.com/intro-skipper/intro-skipper): I mean it's in the name, very consistent once you set it up correctly
+- [Scyfin Snow Theme](https://github.com/loof2736/scyfin)
+- AniDB, Fanart, TheTVDB: Metadata for Movies & TV Shows - Recently started using Posterizarr too
 
 
 ## Craft
 Me and a couple friends wanted to play Minecraft together, so I found a [Proxmox Helper Script](https://community-scripts.github.io/ProxmoxVE/scripts?id=crafty-controller) to run a Minecraft Server for us
 
+## Kuma
+I use Uptime Kuma as a Monitoring solution and the setup is so nice, simple and works amazingly. [Proxmox Helper Script](https://community-scripts.github.io/ProxmoxVE/scripts?id=uptimekuma)
 
 ## Retro
 I've setup an Ubuntu Virtual Machine to host a couple of Games that I wanted to be able to stream from my Phone, TV, Xbox, anywhere. 
